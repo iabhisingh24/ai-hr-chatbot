@@ -2,17 +2,18 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Copy requirements first for better caching
+# Copy only requirements first for better caching
 COPY backend/requirements.txt .
 
-# Install Python dependencies
+# Install dependencies efficiently
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the backend application
-COPY backend/ .
+# Copy only necessary backend files
+COPY backend/main.py .
+COPY backend/docs/ ./docs/
+# Only copy essential directories
+COPY backend/uploads/ ./uploads/
 
-# Expose port
 EXPOSE $PORT
 
-# Start command
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
