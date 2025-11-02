@@ -34,7 +34,7 @@ A secure internal web app that lets employees ask natural-language questions abo
 
 **Frontend**: React.js, CSS3, Axios  
 **Backend**: FastAPI, LangChain, FAISS, OpenRouter AI  
-**Deployment**: Railway (Backend), Vercel (Frontend)
+**Deployment**: Heroku (Backend), Netlify (Frontend)
 
 ## Quick Start
 
