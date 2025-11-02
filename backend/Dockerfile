@@ -8,11 +8,14 @@ COPY backend/requirements.txt .
 # Install dependencies efficiently
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy only necessary backend files
+# Copy main application file
 COPY backend/main.py .
+
+# Copy docs directory (if it exists)
 COPY backend/docs/ ./docs/
-# Only copy essential directories
-COPY backend/uploads/ ./uploads/
+
+# Create uploads directory if it doesn't exist (but don't copy content)
+RUN mkdir -p uploads
 
 EXPOSE $PORT
 
