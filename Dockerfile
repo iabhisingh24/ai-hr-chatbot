@@ -27,4 +27,5 @@ RUN mkdir -p uploads
 
 EXPOSE $PORT
 
+# HR Chatbot Application - Deployment trigger
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
