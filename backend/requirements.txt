@@ -1,14 +1,13 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-python-multipart==0.0.6
-langchain==0.0.354
-langchain-community==0.0.10
-langchain-text-splitters==0.0.1
-langchain-huggingface==0.0.2
-sentence-transformers==2.2.2
-faiss-cpu==1.7.4
-huggingface-hub>=0.23.0  # ← CHANGED THIS LINE
-transformers==4.35.2
-python-dotenv==1.0.0
-requests==2.31.0
-pydantic==2.5.0
+fastapi
+uvicorn[standard]
+python-multipart
+langchain
+langchain-community
+langchain-text-splitters
+sentence-transformers
+faiss-cpu
+huggingface-hub
+transformers
+python-dotenv
+requests
+pydantic
