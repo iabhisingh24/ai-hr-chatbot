@@ -36,7 +36,7 @@ A secure internal web app that lets employees ask natural-language questions abo
 **Backend**: FastAPI, LangChain, FAISS, OpenRouter AI  
 **Deployment**: Railway (Backend), Vercel (Frontend)
 
-## uick Start
+## Quick Start
 
 ### Backend Setup
 ```bash
