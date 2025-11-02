@@ -1,21 +1,14 @@
-# FastAPI and server
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 python-multipart==0.0.6
-
-# LangChain and AI
 langchain==0.0.354
 langchain-community==0.0.10
 langchain-text-splitters==0.0.1
 langchain-huggingface==0.0.2
-
-# Embeddings and vector store
 sentence-transformers==2.2.2
 faiss-cpu==1.7.4
-huggingface-hub==0.19.4
+huggingface-hub>=0.23.0  # ← CHANGED THIS LINE
 transformers==4.35.2
-
-# Utilities
 python-dotenv==1.0.0
 requests==2.31.0
 pydantic==2.5.0
