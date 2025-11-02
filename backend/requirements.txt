@@ -4,6 +4,7 @@ python-multipart
 langchain
 langchain-community
 langchain-text-splitters
+langchain-huggingface  # ← ADD THIS LINE
 sentence-transformers
 faiss-cpu
 huggingface-hub
