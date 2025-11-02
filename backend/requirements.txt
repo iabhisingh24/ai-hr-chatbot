@@ -1,8 +1,0 @@
-fastapi
-uvicorn[standard]
-python-multipart
-langchain-community
-langchain-text-splitters
-python-dotenv
-requests
-pydantic
