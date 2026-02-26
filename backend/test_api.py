@@ -30,6 +30,6 @@ if docs_response.status_code == 200:
         print("Parsed Docs Response:")
         print(json.dumps(docs_data, indent=2))
     except json.JSONDecodeError as e:
-        print(f"❌ JSON Parse Error: {e}")
+        print(f" JSON Parse Error: {e}")
 else:
-    print(f"❌ HTTP Error: {docs_response.status_code}")
+    print(f" HTTP Error: {docs_response.status_code}")
