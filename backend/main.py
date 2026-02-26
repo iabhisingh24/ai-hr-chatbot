@@ -179,7 +179,7 @@ ANSWER:"""
             timeout=30
         )
         
-        print(f"🔍 API Response Status: {response.status_code}")
+        print(f" API Response Status: {response.status_code}")
         
         if response.status_code == 200:
             result = response.json()
