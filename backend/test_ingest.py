@@ -22,4 +22,4 @@ ask_response = requests.post(
 )
 print("Ask Status:", ask_response.status_code)
 if ask_response.status_code == 200:
-    print("✅ System working after re-indexing!")
+    print(" System working after re-indexing!")
